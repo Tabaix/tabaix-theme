@@ -1,0 +1,39 @@
+.qr-code-generator {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.qr-field {
+  display: grid;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.qr-field input {
+  width: 100%;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border-primary);
+  border-radius: 0.75rem;
+  background: var(--color-bg-secondary);
+}
+
+.qr-output {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  background: var(--color-bg-secondary);
+  border: 1px dashed var(--color-border-primary);
+  border-radius: 1rem;
+}
+
+.qr-output img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+#qr-download {
+  display: inline-flex;
+  margin-top: var(--space-4);
+}
