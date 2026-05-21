@@ -1,0 +1,49 @@
+.image-compressor {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.ic-dropzone {
+  display: grid;
+  gap: var(--space-4);
+  align-items: center;
+  justify-items: center;
+  padding: var(--space-10);
+  border: 2px dashed var(--color-border-primary);
+  border-radius: 1rem;
+  background: var(--color-bg-secondary);
+  cursor: pointer;
+  text-align: center;
+}
+
+.ic-dropzone input[type="file"] {
+  display: none;
+}
+
+.ic-options {
+  margin: var(--space-6) 0;
+}
+
+.ic-options label {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.ic-options input[type="range"] {
+  width: 100%;
+}
+
+.ic-preview {
+  margin-top: var(--space-6);
+}
+
+.ic-preview img {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid var(--color-border-primary);
+}
+
+#ic-download {
+  display: inline-flex;
+  margin-top: var(--space-4);
+}

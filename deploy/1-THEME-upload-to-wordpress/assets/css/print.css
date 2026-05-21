@@ -1,0 +1,19 @@
+@media print {
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  .site-header,
+  .site-footer,
+  .nav-primary,
+  .tool-category,
+  .btn {
+    display: none !important;
+  }
+
+  .entry-content,
+  .tool-content {
+    font-size: 12pt;
+  }
+}
