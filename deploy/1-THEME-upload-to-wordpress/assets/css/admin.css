@@ -1,8 +1,0 @@
-.wrap h1 {
-  color: var(--color-text-primary);
-}
-
-.wrap .button-primary {
-  background: var(--color-primary);
-  border-color: var(--color-primary-dark);
-}
