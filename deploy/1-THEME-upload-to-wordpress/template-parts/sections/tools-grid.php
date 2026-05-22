@@ -17,7 +17,7 @@
       <?php
       $tools = new WP_Query(array(
         'post_type' => 'tool',
-        'posts_per_page' => 8,
+        'posts_per_page' => get_theme_mod('tabaix_tools_limit', 8),
         'meta_key' => 'featured',
         'meta_value' => '1',
       ));

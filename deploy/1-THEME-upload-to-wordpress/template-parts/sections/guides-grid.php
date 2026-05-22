@@ -9,7 +9,7 @@
       <?php
       $guides = new WP_Query(array(
         'post_type' => 'post',
-        'posts_per_page' => 6,
+        'posts_per_page' => get_theme_mod('tabaix_guides_limit', 6),
         'category_name' => 'saudi-arabia',
       ));
       if ($guides->have_posts()) :
