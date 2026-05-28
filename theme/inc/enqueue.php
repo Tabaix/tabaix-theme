@@ -79,6 +79,29 @@ function tabaix_enqueue_assets() {
   );
   wp_script_add_data('tabaix-navigation', 'defer', true);
 
+  if (is_page_template('page-templates/template-glassmorphic-aurora.php')) {
+    wp_enqueue_style(
+      'tabaix-glassmorphic-fonts',
+      'https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap',
+      array(),
+      null
+    );
+    wp_enqueue_style(
+      'tabaix-glassmorphic-aurora',
+      get_template_directory_uri() . '/assets/css/glassmorphic-aurora.css',
+      array('tabaix-main'),
+      $theme_version
+    );
+    wp_enqueue_script(
+      'tabaix-glassmorphic-aurora',
+      get_template_directory_uri() . '/assets/js/glassmorphic-aurora.js',
+      array('tabaix-main'),
+      $theme_version,
+      true
+    );
+    wp_script_add_data('tabaix-glassmorphic-aurora', 'defer', true);
+  }
+
   wp_enqueue_script(
     'tabaix-search',
     get_template_directory_uri() . '/assets/js/search.js',
